@@ -22,7 +22,35 @@ This Session 10 activity demonstrates Git history, feature branches, pull
 requests, and review. It does not require an initialized React app. Opening the
 JSX file directly in a browser will not render it; JSX needs a React build setup.
 
-## Collaboration
+## Integration example
+
+In an existing React project, copy `StudentProfile.jsx` into `src/` beside
+`App.jsx`, then import and render it:
+
+```jsx
+import StudentProfile from "./StudentProfile.jsx";
+
+function App() {
+  return (
+    <main>
+      <h1>Student Mobile Portal</h1>
+      <StudentProfile />
+    </main>
+  );
+}
+
+export default App;
+```
+
+Start the existing project's development server using its documented command.
+Confirm the heading and all three fictional values shown in the table above.
+If the project uses the classic JSX transform, add `import React from "react";`
+at the top of JSX files; projects using the automatic JSX transform do not need it.
+
+The integration example is a proactive documentation improvement. It is not
+evidence that a classmate has reviewed the pull request.
+
+## Review workflow
 
 Feature branch: `feature/student-profile`.
 Target branch: `main`.
